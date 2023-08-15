@@ -1,13 +1,175 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Bonny Font */
+@font-face {
+  font-family: 'Bonny-Variable';
+  src: url('./Assets/Bonny/Bonny-Variable.woff2') format('woff2'),
+       url('./Assets/Bonny/Bonny-Variable.woff') format('woff'),
+       url('./Assets/Bonny/Bonny-Variable.ttf') format('truetype');
+       font-weight: 100 700;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Bonny-Thin';
+  src: url('./Assets/Bonny/Bonny-Thin.woff2') format('woff2'),
+       url('./Assets/Bonny/Bonny-Thin.woff') format('woff'),
+       url('./Assets/Bonny/Bonny-Thin.ttf') format('truetype');
+       font-weight: 100;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Bonny-Light';
+  src: url('./Assets/Bonny/Bonny-Light.woff2') format('woff2'),
+       url('./Assets/Bonny/Bonny-Light.woff') format('woff'),
+       url('./Assets/Bonny/Bonny-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Bonny-Regular';
+  src: url('./Assets/Bonny/Bonny-Regular.woff2') format('woff2'),
+       url('./Assets/Bonny/Bonny-Regular.woff') format('woff'),
+       url('./Assets/Bonny/Bonny-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Bonny-Medium';
+  src: url('./Assets/Bonny/Bonny-Medium.woff2') format('woff2'),
+       url('./Assets/Bonny/Bonny-Medium.woff') format('woff'),
+       url('./Assets/Bonny/Bonny-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Bonny-Bold';
+  src: url('./Assets/Bonny/Bonny-Bold.woff2') format('woff2'),
+       url('./Assets/Bonny/Bonny-Bold.woff') format('woff'),
+       url('./Assets/Bonny/Bonny-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+/* Tabular Font */
+@font-face {
+  font-family: 'Tabular-Variable';
+  src: url('./Assets/Tabular/Tabular-Variable.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-Variable.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-Variable.ttf') format('truetype');
+       font-weight: 300 700;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Tabular-VariableItalic';
+  src: url('./Assets/Tabular/Tabular-VariableItalic.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-VariableItalic.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-VariableItalic.ttf') format('truetype');
+       font-weight: 300 700;
+       font-display: swap;
+       font-style: italic;
+}
+@font-face {
+  font-family: 'Tabular-Light';
+  src: url('./Assets/Tabular/Tabular-Light.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-Light.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Tabular-LightItalic';
+  src: url('./Assets/Tabular/Tabular-LightItalic.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-LightItalic.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-LightItalic.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: italic;
+}
+@font-face {
+  font-family: 'Tabular-Regular';
+  src: url('./Assets/Tabular/Tabular-Regular.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-Regular.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Tabular-Italic';
+  src: url('./Assets/Tabular/Tabular-Italic.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-Italic.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-Italic.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: italic;
+}
+@font-face {
+  font-family: 'Tabular-Medium';
+  src: url('./Assets/Tabular/Tabular-Medium.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-Medium.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Tabular-MediumItalic';
+  src: url('./Assets/Tabular/Tabular-MediumItalic.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-MediumItalic.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-MediumItalic.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: italic;
+}
+@font-face {
+  font-family: 'Tabular-Semibold';
+  src: url('./Assets/Tabular/Tabular-Semibold.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-Semibold.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Tabular-SemiboldItalic';
+  src: url('./Assets/Tabular/Tabular-SemiboldItalic.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-SemiboldItalic.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-SemiboldItalic.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: italic;
+}
+@font-face {
+  font-family: 'Tabular-Bold';
+  src: url('./Assets/Tabular/Tabular-Bold.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-Bold.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Tabular-BoldItalic';
+  src: url('./Assets/Tabular/Tabular-BoldItalic.woff2') format('woff2'),
+       url('./Assets/Tabular/Tabular-BoldItalic.woff') format('woff'),
+       url('./Assets/Tabular/Tabular-BoldItalic.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: italic;
+}
+body{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }

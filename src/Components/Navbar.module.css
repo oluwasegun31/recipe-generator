@@ -1,0 +1,51 @@
+.header{
+    width: 100%;
+    max-width: 1400px;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1rem;
+}
+.nav .logo{
+    font: 700 1.5rem 'Tabular-Bold';
+    text-transform: capitalize;
+    cursor: default;
+}
+.nav .navItem{
+    width: 55vw;
+}
+.nav .navItem a{
+    margin-right: 16px;
+    font: 500 1.5rem "Tabular-MediumItalic";
+    color: #000;
+    position: relative;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.active{
+    font: 700 1.5rem "Tabular-Bold";
+}
+.nav .navItem a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.nav .navItem a:hover::after{
+    width: 100%;
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 800px) {
+    .nav .navItem{
+        width: auto;
+    }
+}

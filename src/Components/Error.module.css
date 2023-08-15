@@ -1,0 +1,21 @@
+.errContainer{
+    position: fixed;
+    top: 8rem;
+    right: 10px;
+    width: 300px;
+    height: 60px;
+    background-color: #ff9393;
+    border-left: 5px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+}
+.errContainer img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.errContainer p{
+    font: 700 1rem 'Tabular-Bold';
+}

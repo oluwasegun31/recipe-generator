@@ -1,0 +1,85 @@
+.header{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+}
+.headLeft{
+    width: 45%;
+}
+.headLeft > h1{
+    font: 700 5rem "Bonny-Bold";
+    line-height: 1;
+    text-transform: capitalize;
+}
+.headLeft > p{
+    font: 500 16px "Tabular-MediumItalic";
+    margin: 16px 0;
+}
+.headLeft > button{
+    border: 0;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font: 500 1rem "Tabular-Medium";
+    cursor: pointer;
+}
+.headRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.headRight img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+    .header{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    .headLeft{
+        width: 100%;
+        height: 100%;
+    }
+    .headRight{
+        width: 100%;
+        height: 300px;
+    }
+    .headRight img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header{
+        height: 90vh;
+    }
+    .headLeft h1{
+        font: 700 3rem "Bonny-Bold";
+        line-height: 1;
+    }
+    .headLeft > p{
+        font: 500 14px "Tabular-MediumItalic";
+        margin: 10px 0;
+    }
+    .headLeft > button{
+        padding: 12px 14px;
+        font: 500 1rem "Tabular-Medium";
+    }
+    .headRight{
+        height: 40vh;
+    }
+}
