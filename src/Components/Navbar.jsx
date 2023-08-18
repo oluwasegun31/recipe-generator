@@ -1,20 +1,26 @@
 import classes from './Navbar.module.css';
 import {NavLink} from 'react-router-dom'
 function Navbar(){
+    const navStyle = {
+        active: {font: "500 1.5rem 'Tabular-Medium'", color: 'crimson'},
+        notActive: {font: "400 1.5rem 'Tabular-Regular'", color: '#000'}
+    }
+    
     return(
-        <header className={classes.header}>
-            <nav className={classes.nav}>
-                <p className={classes.logo}>RecGen</p>
-                <div className={classes.navItem}>
-                    <NavLink to="/">
-                        Home
-                    </NavLink>
-                    <NavLink to="search">
-                        Recipe
-                    </NavLink>
-                </div>
-            </nav>
-        </header>
+        <nav className={classes.nav}>
+            <NavLink 
+                to="/"
+                style={({isActive})=> isActive ?  navStyle.active: navStyle.notActive}
+            >
+                Home
+            </NavLink>
+            <NavLink
+                to="search"
+                style={({isActive})=> isActive ?  navStyle.active: navStyle.notActive}
+            >
+                Recipe
+            </NavLink>
+        </nav>
     )
 }
 

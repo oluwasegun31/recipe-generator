@@ -1,6 +1,6 @@
 # Random Recipe Generator App
 
-![App Screenshot](screenshot.png) <!-- Replace with your app's screenshot -->
+![App Screenshot](src/Assets/Images/Screenshot%20(458).png)
 
 A simple app that generates random recipes for you to explore and try out new dishes.
 
@@ -8,13 +8,11 @@ A simple app that generates random recipes for you to explore and try out new di
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Fonts Used](#fonts-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -26,10 +24,6 @@ The Random Recipe Generator app is a React-based project that allows users to di
 - View recipe details including name, ingredients, and instructions.
 - Easy-to-use interface for users to explore and find new dishes.
 - Simple and responsive design for a pleasant user experience.
-
-## Demo
-
-Insert GIF or video showcasing the app in action.
 
 ## Installation
 
@@ -56,7 +50,3 @@ Insert GIF or video showcasing the app in action.
 ## Contributing
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

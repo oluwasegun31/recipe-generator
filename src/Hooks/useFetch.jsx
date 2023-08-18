@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 function UseFetch(url){
-    const [displayCards, setDisplayCards] = useState("");
+    const [displayCards, setDisplayCards] = useState();
     const [isLoading, setIsLoading] = useState(true);
-    const [isError, setIsError] = useState(false)
+    const [isError, setIsError] = useState(false);
+    const [recipeArr, setRecipeArr] = useState([])
 
     useEffect(()=> {
         const searchRecipe = async()=> {
@@ -13,9 +14,10 @@ function UseFetch(url){
                     throw new Error('Unable to fetch');
                 }
                 const responseData = await response.json();
-                console.log(responseData)
                 // to get the array of object for all search results
                 setDisplayCards(responseData.hits)
+                setRecipeArr(responseData.hits)
+                
                 // to display the error and loading as false
                 setIsError(false)
                 setIsLoading(false)
@@ -31,8 +33,7 @@ function UseFetch(url){
         }
         searchRecipe();
     }, [url])
-
-    return {displayCards, isLoading, isError, setIsLoading, setIsError}
+    return {displayCards, isLoading, isError, setIsLoading, setIsError, recipeArr}
 }
 
 export default UseFetch

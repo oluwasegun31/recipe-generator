@@ -1,0 +1,128 @@
+.detailsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding: 3rem 1rem;
+}
+.detailsHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.detailName{
+    font: 700 2.5rem 'Tabular-Bold';
+    word-spacing: -8px;
+    text-align: center;
+}
+.type{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 1rem;
+    width: 100%;
+}
+.dishType, .mealType, .calories{
+    font: 500 16px 'Tabular-Medium';
+    word-spacing: -8px;
+}
+.ingredient{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+.ingredient > h3{
+    font: 500 2rem 'Tabular-Medium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ingredient > h3 img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+.ingredientList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+.list{
+    width: 50%;
+    margin-right: 16px;
+}
+.ingredientList > .list p {
+    font: 500 18px 'Tabular-Medium';
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ingredientList > .list p > img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+.detailImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.detailImg > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+    .ingredientList{
+        flex-direction: column-reverse;
+    }
+    .list{
+        width: 100%;
+        margin-top: 1.5rem;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .detailsContainer{
+        padding: 2rem 10px 10px 10px;
+    }
+    .detailName{
+        font: 700 1.5rem 'Tabular-Bold';
+        word-spacing: 1px;
+        line-height: 1;
+    }
+    .detailsHeading{
+        justify-content: center;
+    }
+    .type{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ingredientList{
+        padding: 10px;
+    }
+    .detailImg > img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .ingredientList > .list p {
+        font: 500 14px 'Tabular-Medium';
+    }
+}
