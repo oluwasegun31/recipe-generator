@@ -1,7 +1,7 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import { Navbar } from './Components';
-import { Home, SearchDetails, SearchRecipe } from './Pages';
+import { ErrorPage, Home, SearchDetails, SearchRecipe } from './Pages';
 
 function App() {
   return(
@@ -13,6 +13,7 @@ function App() {
             path='/'
             element ={<Home />}
           />
+
           <Route path='search'>
             <Route
               index
@@ -24,6 +25,10 @@ function App() {
             />
           </Route>
           
+          <Route 
+            path='*'
+            element = {<ErrorPage />}
+          />
         </Routes>
       </main>
     </>

@@ -1,0 +1,93 @@
+.container{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.bulb{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bulb img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.writeup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+}
+.writeup > h1{
+    font: 700 10rem 'Tabular-Bold';
+    color: #fec108;
+}
+.writeup > p:nth-of-type(1){
+    font: 700 2rem 'Tabular-Bold';
+    color: #000;
+    text-transform: uppercase;
+    word-spacing: -8px;
+}
+.writeup > p:nth-of-type(2){
+    font: 500 14px 'Tabular-Medium';
+    color: #616161;
+    text-transform: capitalize;
+}
+.writeup > button{
+    font: 700 14px 'Tabular-Bold';
+    color: #000;
+    border: 0;
+    outline: none;
+    background-color: inherit;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.writeup > button > img{
+    width: 30px;
+    margin-left: 20px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .bulb{
+        width: 100%;
+    }
+    .bulb > img{
+        width: 100%;
+        height: 200px;
+    }
+    .writeup{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .writeup > h1{
+        font: 700 7rem 'Tabular-Bold';
+    }
+    .writeup > p:nth-of-type(1){
+        font: 700 1.5rem 'Tabular-Bold';
+        word-spacing: -7px;
+    }
+    .writeup > p:nth-of-type(2){
+        font: 500 12px 'Tabular-Medium';
+    }
+}

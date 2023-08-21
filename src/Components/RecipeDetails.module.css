@@ -5,7 +5,15 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 2rem;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
+    position: relative;
+}
+.back{
+    position: fixed;
+    top: 4rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 10;
 }
 .detailsHeading{
     display: flex;
@@ -30,7 +38,7 @@
     font: 500 16px 'Tabular-Medium';
     word-spacing: -8px;
 }
-.ingredient{
+.ingredient, .healthLabel{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,13 +46,13 @@
     align-items: flex-start;
     margin-top: 3rem;
 }
-.ingredient > h3{
+.ingredient > h3, .healthLabel > h3{
     font: 500 2rem 'Tabular-Medium';
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ingredient > h3 img{
+.ingredient > h3 img, .healthLabel > h3 img{
     width: 30px;
     height: 30px;
     object-fit: cover;
@@ -87,6 +95,31 @@
     height: 300px;
     object-fit: cover;
 }
+.source{
+    font: 700 1.5rem 'Tabular-Bold';
+    word-spacing: -8px;
+}
+.healthLabel{
+    margin-top: 2rem;
+}
+.label{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2px;
+    margin-top: 16px;
+}
+.label p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font: 500 16px 'Tabular-Medium';
+}
+.label p > img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
 @media screen and (max-width: 1000px) {
     .ingredientList{
         flex-direction: column-reverse;
@@ -124,5 +157,13 @@
     }
     .ingredientList > .list p {
         font: 500 14px 'Tabular-Medium';
+    }
+    .source{
+        font: 700 15px 'Tabular-Bold';
+        word-spacing: 1px;
+    }
+    .ingredient > h3, .healthLabel > h3{
+        font: 500 1.5rem 'Tabular-Medium';
+        word-spacing: -8px;
     }
 }

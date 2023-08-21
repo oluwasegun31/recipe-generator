@@ -8,16 +8,17 @@
     position: relative;
 }
 .headLeft{
-    width: 45%;
+    width: 50%;
 }
 .headLeft > h1{
-    font: 700 5rem "Bonny-Bold";
+    font: 700 4rem "Tabular-Bold";
     line-height: 1;
     text-transform: capitalize;
+    word-spacing: -10px;
 }
 .headLeft > p{
     font: 500 16px "Tabular-MediumItalic";
-    margin: 16px 0;
+    margin: 22px 0;
 }
 .headLeft > button{
     border: 0;
@@ -33,12 +34,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 .headRight img{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     object-fit: contain;
 }
 
@@ -47,7 +48,7 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 16px;
         height: auto;
     }
     .headLeft{
@@ -68,8 +69,9 @@
         height: 90vh;
     }
     .headLeft h1{
-        font: 700 3rem "Bonny-Bold";
+        font: 700 2rem "Tabular-Bold";
         line-height: 1;
+        word-spacing: -5px;
     }
     .headLeft > p{
         font: 500 14px "Tabular-MediumItalic";

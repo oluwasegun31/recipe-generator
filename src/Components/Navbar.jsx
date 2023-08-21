@@ -2,8 +2,8 @@ import classes from './Navbar.module.css';
 import {NavLink} from 'react-router-dom'
 function Navbar(){
     const navStyle = {
-        active: {font: "500 1.5rem 'Tabular-Medium'", color: 'crimson'},
-        notActive: {font: "400 1.5rem 'Tabular-Regular'", color: '#000'}
+        active: {font: "700 1.5rem 'Tabular-Bold'", color: 'crimson'},
+        notActive: {font: "700 1.5rem 'Tabular-Bold'", color: '#000'}
     }
     
     return(
