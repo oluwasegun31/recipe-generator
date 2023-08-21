@@ -1,6 +1,6 @@
 # Random Recipe Generator App
 
-![App Screenshot](src/Assets/Images/Screenshot%20(458).png)
+![App Screenshot](src/Assets/Images/Screenshot%20(460).png)
 
 A simple app that generates random recipes for you to explore and try out new dishes.
 
