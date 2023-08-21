@@ -1,4 +1,5 @@
 import { useParams, useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import classes from './RecipeDetails.module.css';
 import diamond from '../Assets/Images/icons8-diamond-48.png';
 import blueDiamond from '../Assets/Images/icons8-diamond-blue.png';
@@ -10,6 +11,11 @@ function RecipeDetails(){
     const location = useLocation();
     const data = location.state;
     const recipeData = data[pos].recipe;
+
+    // Scroll to the top of the recipe details component
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     // to store the useNavigate function in a variable
     const navigate = useNavigate();
